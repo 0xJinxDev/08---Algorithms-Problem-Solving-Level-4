@@ -10,4 +10,7 @@
   <Project Path="Problem#05/Problem#05.vcxproj" Id="ff2fde18-c3ad-44e7-8a21-4ecdf1fccc6a" />
   <Project Path="Problem#06/Problem#06.vcxproj" Id="2a272acd-63bb-4a10-8db0-c73f3ddcb494" />
   <Project Path="Problem#07/Problem#07.vcxproj" Id="d2e23907-b971-45dc-9683-2ff861678fac" />
+  <Project Path="Problem#08/Problem#08.vcxproj" Id="ee73f67b-0c38-463a-b9a0-060b207f6d7d" />
+  <Project Path="Problem#09/Problem#09.vcxproj" Id="8ee55e11-f814-462d-bd90-0aa308d99fdf" />
+  <Project Path="Problem#10/Problem#10.vcxproj" Id="b95d406a-901a-4b3c-9721-99f5022cfa25" />
 </Solution>
