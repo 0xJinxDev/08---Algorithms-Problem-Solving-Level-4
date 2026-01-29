@@ -1,4 +1,5 @@
 //Write a program to calculate how many days from the begining of the year till a given date
+//Then take the days and convert them back into a date
 #include <iostream>
 #include <string>
 
@@ -24,7 +25,7 @@ short DaysInAMonth(short year, short month) {
 		return 0;
 	}
 	short Days[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
-	return (month == 2) ? (IsLeapYear(year) ? 29 : 28) : Days[month -1];
+	return (month == 2) ? (IsLeapYear(year) ? 29 : 28) : Days[month - 1];
 
 }
 
@@ -40,13 +41,29 @@ short CalculateDays(short year, short month, short day) {
 
 }
 
+string NumberOfDaysToYear(short year, short NumberOfDays) {
+
+	short month = 1;
+
+	while (NumberOfDays > DaysInAMonth(year, month)) {
+		NumberOfDays -= DaysInAMonth(year, month);
+		month++;
+	}
+
+	short day = NumberOfDays;
+
+	return to_string(day) + "/" + to_string(month) + "/" + to_string(year);
+}
+
 int main() {
-	short Year = ReadNumber("Please enter the year:");
-	short Month = ReadNumber("Please enter the month:");
-	short Day = ReadNumber("Please enter the day:");
-	
-	cout << "Number of days from the begining of the year is " << CalculateDays(Year, Month, Day) << endl;
+	short Year = 2026;
+	short Month = 1;
+	short Day = 29;
+	short NumberOfDays = CalculateDays(Year, Month, Day);
 
+	cout << "Number of days from the begining of the year is " << NumberOfDays << endl;
 
+	string s = NumberOfDaysToYear(Year, NumberOfDays);
+	cout << s;
 	return 0;
 }
