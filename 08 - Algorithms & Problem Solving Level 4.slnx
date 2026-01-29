@@ -3,5 +3,11 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Problem#01/Problem#01.vcxproj" />
+  <Project Path="Problem#01/Problem#01.vcxproj" Id="3714abed-2e40-49c9-8334-c7807d6bacbe" />
+  <Project Path="Problem#02/Problem#02.vcxproj" Id="38a61903-ff84-4c60-ac9d-49bc04b2aaf3" />
+  <Project Path="Problem#03/Problem#03.vcxproj" Id="e8392b2c-a961-492d-a956-568f71725d4f" />
+  <Project Path="Problem#04/Problem#04.vcxproj" Id="2de43d61-ed59-4b15-8d14-678ad35e0500" />
+  <Project Path="Problem#05/Problem#05.vcxproj" Id="ff2fde18-c3ad-44e7-8a21-4ecdf1fccc6a" />
+  <Project Path="Problem#06/Problem#06.vcxproj" Id="2a272acd-63bb-4a10-8db0-c73f3ddcb494" />
+  <Project Path="Problem#07/Problem#07.vcxproj" Id="d2e23907-b971-45dc-9683-2ff861678fac" />
 </Solution>
