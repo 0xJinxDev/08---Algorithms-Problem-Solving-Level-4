@@ -41,7 +41,7 @@ short CalculateDays(short year, short month, short day) {
 
 }
 
-string NumberOfDaysToYear(short year, short NumberOfDays) {
+string NumberOfDaysToDate(short year, short NumberOfDays) {
 
 	short month = 1;
 
@@ -63,7 +63,7 @@ int main() {
 
 	cout << "Number of days from the begining of the year is " << NumberOfDays << endl;
 
-	string s = NumberOfDaysToYear(Year, NumberOfDays);
+	string s = NumberOfDaysToDate(Year, NumberOfDays);
 	cout << s;
 	return 0;
 }

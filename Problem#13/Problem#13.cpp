@@ -1,0 +1,56 @@
+//Write a program to compare 2 dates
+
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+
+struct stDate {
+
+	short Year, Month, Day;
+
+};
+
+short ReadNumber(const string& Message) {
+	short number;
+
+	do {
+
+		cout << Message << endl;
+		cin >> number;
+
+	} while (number <= 0);
+	return number;
+}
+void ReadDate(stDate& Date) {
+	Date.Year = ReadNumber("Please enter the year:");
+	Date.Month = ReadNumber("Please enter the month:");
+	Date.Day = ReadNumber("Please enter the day:");
+
+}
+bool IsDate1LessThanDate2(stDate& Date1, stDate& Date2) {
+
+	return (Date1.Year < Date2.Year) ?
+		true :
+		(Date1.Year == Date2.Year) ?
+		(Date1.Month < Date2.Month) ?
+		true :
+		(Date1.Month == Date2.Month) ?
+		(Date1.Day < Date2.Day) :
+		false :
+		false;
+
+}
+int main() {
+
+	stDate Date1, Date2;
+
+	ReadDate(Date1);
+	ReadDate(Date2);
+
+	cout << (IsDate1LessThanDate2(Date1, Date2) ? "Yes.\n" : "No.\n");
+
+	return 0;
+}
